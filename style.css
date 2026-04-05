@@ -1,0 +1,139 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0B6E4F 50%,#800000 50%);
+  color:white;
+  scroll-behavior:smooth;
+}
+
+/* NAVBAR */
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:15px 40px;
+  background:rgba(0,0,0,0.85);
+  position:fixed;
+  width:100%;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+}
+
+.logo img{
+  width:45px;
+  margin-right:10px;
+}
+
+nav a{
+  margin:0 10px;
+  color:white;
+  text-decoration:none;
+}
+
+nav button{
+  background:#800000;
+  border:none;
+  padding:8px 15px;
+  border-radius:20px;
+  color:white;
+}
+
+/* HERO */
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  position:relative;
+}
+
+.bg-logo{
+  position:absolute;
+  width:60%;
+  opacity:0.08;
+}
+
+.content h1{
+  font-size:42px;
+}
+
+.content button{
+  margin-top:20px;
+  padding:10px 20px;
+  background:#0B6E4F;
+  border:none;
+  border-radius:20px;
+}
+
+/* SECTION */
+section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+/* GALLERY */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.1);
+  border-radius:10px;
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.card img{
+  width:100%;
+  cursor:pointer;
+}
+
+.card p{
+  padding:10px;
+}
+
+.card:hover{
+  transform:scale(1.05);
+}
+
+/* IMAGE MODAL */
+.img-modal{
+  display:none;
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:black;
+  text-align:center;
+}
+
+.img-modal img{
+  max-width:80%;
+  margin-top:50px;
+}
+
+/* FOOTER */
+footer{
+  background:black;
+  padding:20px;
+}
+
+/* MOBILE */
+.menu{
+  display:none;
+}
+
+@media(max-width:768px){
+  nav{display:none;}
+  nav.show{display:flex;flex-direction:column;}
+  .menu{display:block;}
+}
