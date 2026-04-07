@@ -65,12 +65,19 @@ nav button{
   font-size:42px;
 }
 
-.content button{
+.hero .content button{
   margin-top:20px;
   padding:10px 20px;
-  background:#0B6E4F;
+  background:hsl(194, 56%, 63%);
   border:none;
   border-radius:20px;
+  color:black;
+  cursor:pointer;
+}
+
+.hero .content button:hover{
+  background:#800000;
+  color:white;
 }
 
 /* SECTION */
